@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de malla curricular 4</title>
+  <meta name='viewport' content='width=device-width'>
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <!--Conveniciones-->
+<h1>Prueba de concepto malla curricular interactiva</h1>
+<p>Seleccione la materia de la cual desea ver los detalles.<p>
+<div>
+  <h2>Esquema de colores</h2>
+  <p><strong>Materia seleccionada.</strong>
+    <span class="selected">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </p>
+  <p><strong>Prerrequisito</strong> de la materia seleccionada.
+    <span class="previo">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </p>
+  <p><strong>Correquisitos</strong> de la materia seleccionada.
+  <span class="correquisito">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </p>
+  <p>
+    <strong>Dependiente</strong> de la materia seleccionada posterior 
+  <span class="prerequisito">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </p>
+</div>
+<p>
+  <button type="button" id="toggleArrowBtn">Mostrar Prelaciones</button>
+</p>
+
+
+<div class="contenedor">
+  <div class="semestre">
+    <h1>Semestre 1</h1>
+    <div class="materia TRIDI" id="TRIDI3038">
+      <header>
+      3038
+      </header>
+      <section>
+        Modelado
+      </section>
+      
+      <div class="det-mat">
+      <div>
+          Créditos 5
+      </div>
+      <div>
+          UMES 4
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia EXP" id="EXP3000">
+       <header>
+      3000
+      </header>
+      <section>
+        Color I
+      </section>
+      <div class="det-mat">
+      <div>
+          Créditos 3
+      </div>
+      <div>
+          UMES 4
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0242">
+      <header>
+      3033
+      </header>
+      <section>
+        Historia General del Arte
+      </section>
+      
+      <div class="det-mat">
+      <div>
+          Créditos 4
+      </div>
+      <div>
+          UMES 6
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0243">
+      <header>
+      3104
+      </header>
+      <section>
+        Taller de Literatura
+      </section>
+      <div class="det-mat">
+      <div>
+          Créditos 4
+      </div>
+      <div>
+          UMES 4
+      </div>
+      </div>
+    </div>
+  </div><!--Semestre 1-->
+  
+  <div class="semestre">
+     <h1>Semestre 2</h1>
+    <div class="materia BIDI" id="BIDI3023">
+      <header>
+      3023
+      </header>
+      <section>
+        Fundamentos del Diseño Bidimensional I
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia TRIDI" id="TRIDI3103">
+      <header>
+      3103
+      </header>
+      <section>
+        Sistemas de Representación
+      </section>
+      <div class="det-mat">
+      <div>
+          Créditos 3
+      </div>
+      <div>
+          Horas/Semana 4
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia EXP" id="EXP3003">
+      <header>
+      3003
+      </header>
+      <section>
+        Dibujo Analítico
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0245">
+      <header>
+      3017
+      </header>
+      <section>
+        Estudio del Pensamiento Universal
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+  </div><!--Semestre 2-->
+  
+  <div class="semestre">
+     <h1>Semestre 3</h1>
+     <div class="materia BIDI" id="BIDI3024">
+      <header>
+      3024
+      </header>
+      <section>
+        Fundamentos del Diseño Bidimensional II
+      </section>
+       <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia EXP" id="EXP3008">
+      <header>
+      3008
+      </header>
+      <section>
+        Dibujo y Color
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0270">
+      <header>
+      3102
+      </header>
+      <section>
+        Sistemas de Impresión
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0247">
+      <header>
+      3035
+      </header>
+      <section>
+        Lenguaje y Comunicación
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+  </div><!--Semestre 3-->
+  
+  <div class="semestre">
+    <h1>Semestre 4</h1>
+    <div class="materia TRIDI" id="TRIDI3025">
+      <header>
+      3025
+      </header>
+      <section>3025
+        Fundamentos del Diseño Tridimensional
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia OG" id="OG0205">
+      <header>
+      3021
+      </header>
+      <section>
+        Fotografía I
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0251">
+      <header>
+      3030
+      </header>
+      <section>
+        Historia del Arte Moderno y Contemporáneo
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+    <div class="materia ST" id="ST0250">
+      <header>
+      3106
+      </header>
+      <section>
+        Teoría del Arte y el Diseño
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+  </div><!--Semestre 4-->
+  
+  <div class="semestre">
+    <h1>Semestre 5</h1>
+    <div class="materia BIDI" id="BIDI3010">
+      <header>
+      3010
+      </header>
+      <section>
+        Diseño Gráfico I
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 6
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia BIDI" id="BIDI3107">
+      <header>
+      3107
+      </header>
+      <section>
+        Tipografía
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 6
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0252">
+      <header>
+      3022
+      </header>
+      <section>
+        Fotografía II
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia COM" id="COM1">
+      <header>
+      3029
+      </header>
+      <section>
+      Historia del Arte Latinoamericano
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia NFI" id="NFI4">
+      <header>
+      3037
+      </header>
+      <section>
+      Metodología de la Investigación
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  
+  <div class="semestre">
+    <h1>Semestre 6</h1>
+    <div class="materia BIDI" id="BIDI3011">
+      <header>
+      3011
+      </header>
+      <section>
+        Diseño Gráfico II
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 6
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia BIDI" id="BIDI3009">
+      <header>
+      3009
+      </header>
+      <section>
+        Diseño Asistido por Computadora
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia EXP" id="EXP3105">
+      <header>
+      3105
+      </header>
+      <section>
+        Técnicas Gráficas
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0255">
+      <header>
+      3036
+      </header>
+      <section>
+        Medios Audiovisuales
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0254">
+      <header>
+      3100
+      </header>
+      <section>
+        Semiología de la Imagen
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia NFI" id="NFI5">
+      <header>
+      1000
+      </header>
+      <section>
+        Inducción al Servicio Comunitario
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 0
+      </div>
+      <div>
+          Horas Totales: 120
+      </div>
+      </div>
+    </div>
+  </div><!--Semestre 6-->
+  
+  
+  <div class="semestre">
+    <h1>Semestre 7</h1>
+    <div class="materia BIDI" id="BIDI3012">
+      <header>
+      3012
+      </header>
+      <section>
+        Diseño Gráfico III
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 6
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia CB" id="CB0245">
+      <header>
+      3032
+      </header>
+      <section>
+        Historia del Diseño Gráfico
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0258">
+      <header>
+      3016
+      </header>
+      <section>
+        Estética
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0263">
+      <header>
+      3014
+      </header>
+      <section>
+        Diseño Publicitario
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+    <div class="materia ST" id="ST0257">
+      <header>
+      ----
+      </header>
+      <section>
+        Optativa I
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 3
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0261">
+      <header>
+      ----
+      </header>
+      <section>
+        Optativa II
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 3
+      </div>
+      <div>
+          Horas/Semana: 4
+      </div>
+      </div>
+    </div>
+    
+    <div class="materia ST" id="ST0262">
+      <header>
+      1001
+      </header>
+      <section>
+        Servicio Comunitario
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 0
+      </div>
+      <div>
+          Horas Totales: 120
+      </div>
+      </div>
+    </div>
+   </div><!--Sem 7-->
+  
+  <div class="semestre">
+    <h1>Semestre 8</h1>
+    <div class="materia BIDI" id="BIDI3013">
+      <header>
+      3013
+      </header>
+      <section>
+        Diseño Gráfico IV
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 6
+      </div>
+      </div>
+    </div>
+
+    <div class="materia TRIDI" id="TRIDI3015">
+      <header>
+      3015
+      </header>
+      <section>
+        Empaques
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 4
+      </div>
+      <div>
+          Horas/Semana: 6
+      </div>
+      </div>
+    </div>
+
+
+    <div class="materia EXP" id="EXP3034">
+      <header>
+      3034
+      </header>
+      <section>
+        Ilustración
+      </section>
+      <div class="det-mat">
+      <div>
+          Unidades de Crédito: 5
+      </div>
+      <div>
+          Horas/Semana: 8
+      </div>
+      </div>
+    </div>
+  </div><!--Sem 8-->
+  
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jsPlumb/1.4.1/jquery.jsPlumb-1.4.1-all-min.js'></script>
+
+  
+
+    <script  src="./script.js"></script>
+
+
+
+
+</body>
+
+</html>
