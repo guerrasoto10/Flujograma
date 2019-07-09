@@ -28,18 +28,22 @@ body {
 }
 
 .vacio {
-  clear: both;
-  display: inline-block;
-  /*display:block;*/
-  /*display:flex;*/
-  /*overflow: visible;*/
-  border: green 1px solid;
-  /*flex-wrap: nowrap;*/
-  /*position: relative;*/
-  /*overflow:visible;*/
-  /*overflow-y: hidden;
-  overflow-x: scroll;*/
-  white-space: nowrap;
+  height: 7em;
+  width: 10em;
+  border: none;
+  background: white;
+  border-radius: 6px;
+  margin: 1em;
+  padding: 4px;
+  text-align: center;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -ms-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  overflow: hidden;
+  white-space: normal;
+  /*z-index:3;*/
 }
 
 /*.scroll{
@@ -138,30 +142,38 @@ body {
 .EXP {
   background: #6476FF;
 }
-.ST {
+.HIST {
   background: #55C8FF;
 }
-.NFI {
-  background: #6476FF;
+.TEO {
+  background: #1235FF;
 }
-.BU {
-  background: #1933FC;
-}
-.OG {
+.IMP {
   background: #78FFB3;
 }
-.BU {
-  background: #20FF81;
-}
-.COM {
+
+.SC {
   background: #00FC6E;
 }
-.PY {
+
+.OP {
   background: #78BBC4;
 }
-.PT {
-  background: #88FC6E;
+
+.PASAN {
+  background: #99DC9E;
 }
+
+.SEM {
+  background: #90DE89;
+}
+
+.TEGA {
+  background: #20FF81;
+}
+
+
+
 
 /*Estilos de los pre y correquisitos*/
 .correquisito {
