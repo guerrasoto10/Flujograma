@@ -88,19 +88,19 @@ $(document).ready(function(){
   });
   
   //Botón que alterna las flechas
-  $('#toggleArrowBtn').on('click',function(){
-    //Si ya se añadieron las flechas
-    if( FLECHAS_INICIALIZADAS ){
-      //las oculta
-      $('svg').toggle();
-    }else{
-      //Las añade dinámicamente
+  $('#prelaciones').on('click',function(){
+    if (!FLECHAS_INICIALIZADAS) {
+       FLECHAS_INICIALIZADAS =true;
        conectarMaterias(); 
-      FLECHAS_INICIALIZADAS = true;
-    }
-    
+     }else{
+      $('svg').toggle();
+      FLECHAS_INICIALIZADAS =false;
+     }
   });
 });
+
+
+
 
 /*Función que selecciona las materias hacía adelante*/
 function seleccionarAdelante( idMateria ){
